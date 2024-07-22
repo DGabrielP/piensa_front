@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { ApiService } from '../../service/api.service';
+import { ApiService } from '../../services/api.service';
 import { CommonModule } from '@angular/common';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, NzFormModule, NzInputModule, ReactiveFormsModule, NzButtonModule, NzIconModule],
+  imports: [CommonModule, NzFormModule, NzInputModule, ReactiveFormsModule, NzButtonModule, NzIconModule, NzInputNumberModule],
   selector: 'app-pet-info',
   templateUrl: './pet-info.component.html',
   styleUrls: ['./pet-info.component.css']
